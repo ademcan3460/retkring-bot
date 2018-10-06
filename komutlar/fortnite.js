@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const fortnite = require('fortnitetracker-7days-stats');
 
 exports.run = (client, message, args) => {
     if(args.length < 2){
