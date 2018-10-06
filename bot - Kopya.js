@@ -34,8 +34,8 @@ client.on('message', msg => {
     if (msg.author.id !== ayarlar.sahip) {
       msg.reply('Benim yapımcım değilsin!');
     } else {
-      msg.channel.sendMessage(`Bot yeniden başlatılıyor...`).then(msg => {
-      console.log(`BOT: Bot yeniden başlatılıyor...`);
+      msg.channel.sendMessage(`**__Bot yeniden başlatılıyor...__**`).then(msg => {
+      console.log(`**[BOT]** **_Bot yeniden başlatılıyor..._**`);
       process.exit(0);
     })
    }
