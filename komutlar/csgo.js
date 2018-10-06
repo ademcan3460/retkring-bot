@@ -1,6 +1,4 @@
 const Discord = module.require('discord.js');
-var request = require('request');
-var cheerio = require('cheerio');
 
 function getStatData(location, $) {
 
