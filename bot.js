@@ -96,7 +96,7 @@ client.on("guildMemberAdd", member => {
 	
 	member.addRole(role); 
 	
-	channel.send( "Sunucuya Hoş Geldin Sefalar Getirdin + member +");
+       channel.send(member + "Ooo Hoş gelmişsen " " Bro Sunucuya ");
 	
 	member.send("Hoş Geldin!  @üye BROO SUNUCUMUZA!")
 	
