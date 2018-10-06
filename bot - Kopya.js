@@ -19,9 +19,6 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === prefix + 'ping') {
     msg.reply('Pong! **' + client.ping + '** ms');
   }
-  if (msg.content.toLowerCase() === prefix + 'sa') {
-    msg.reply('Aleyküm selam!');
-  }
   if (msg.content.toLowerCase() === prefix + 'yaz') {
     msg.delete();
     msg.channel.sendMessage(msg.content);
