@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
- exports.run  = async (bot, message, args) => {
+exports.run = async (bot, message, args) => {
     if (!message.member.hasPermission("MANAGE_ROLES")) return message.channel.sendEmbed(new Discord.RichEmbed().setDescription('Bu komudu kullanmak için **Rolleri Yönet** yetkisine sahip olmalısın.').setColor(10038562));
     let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
     if (!rMember) return message.channel.sendEmbed(new Discord.RichEmbed().setDescription(`Lütfen bir kullanıcı ismi gir.\nÖrnek: prefiniz!rolver [@İsim] [@Yetki]`).setColor(10038562));
@@ -16,8 +16,15 @@ const Discord = require('discord.js');
 
 };
 
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ['YEDEK KOMUT1', 'YEDEK KOMUT2'],
+  permLevel: "0"
+};
+
 exports.help = {
-  name: "r!rolver",
-  description: "Kişilere Rol Hakkı Verir",
-  usage: "rolver"
+  name: "rolver",
+  description: "Kişiye rol verir",
+  usage: "r!rolver"
 };
