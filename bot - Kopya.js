@@ -29,7 +29,7 @@ client.on('message', msg => {
   }
   if (msg.content.toLowerCase() === prefix + 'reboot') {
     if (msg.author.id !== ayarlar.sahip) {
-      msg.reply('Benim yapımcım değilsin!');
+      msg.reply('**__Güzel Kardeşim Sen Benim SAHİBİM DEİLSİN!!__**');
     } else {
       msg.channel.sendMessage(`**__Bot yeniden başlatılıyor...__**`).then(msg => {
       console.log(`**[BOT]** **_Bot yeniden başlatılıyor..._**`);
