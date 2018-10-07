@@ -80,7 +80,7 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content === 'sa') {
-    msg.reply('**Aleyküm Selam HoşGeldin :)**');
+    msg.reply('**  Aleyküm Selam Güzel Kardeşim **');
   }
 });
 
@@ -96,9 +96,9 @@ client.on("guildMemberAdd", member => {
 	
 	member.addRole(role); 
 	
-       channel.send(member + " Ooo Hoş Gelmişsen " + role + " Bro Sunucumuza");
+       channel.send(member + " **Ooo Hoş Gelmişsen " + role + " Bro Sunucumuza**");
 	
-	member.send("Hoş Geldin!  @üye BROO SUNUCUMUZA!")
+	member.send("**Sunucumuza Hoş Geldin Sefalar Getirdin Bro**")
 	
 });
 
